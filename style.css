@@ -1,0 +1,52 @@
+body {
+  margin: 0 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3f3a49;
+}
+
+path {
+  stroke: #000;
+}
+
+svg {
+  padding: 2rem 4rem;
+  background: linear-gradient(
+    45deg,
+    #ff0000 10%,
+    #ffff00 20%,
+    #0dfb00 40%,
+    #002fff 60%,
+    #e100ff 80%,
+    #ff0000 100%
+  );
+  background-size: 300% auto;
+  animation: shine 1s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: -300% center;
+  }
+}
+
+path:nth-child(1) {
+  fill: #ffd195;
+}
+path:nth-child(2) {
+  fill: #5d9b84;
+}
+path:nth-child(3) {
+  fill: #de7e44;
+}
+path:nth-child(4) {
+  fill: #f2c91f;
+}
+path:nth-child(5) {
+  fill: #541354;
+}
+path:nth-child(6) {
+  fill: #5d9b84;
+}
